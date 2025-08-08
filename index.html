@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Registration form</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <form id="eventForm" novalidate>
+    <h2>Event Registration form</h2>
+
+    <label>Full Name :</label>
+    <input type="text" id="name" required />
+    <small class="error"></small>
+
+    <label>Email :</label>
+    <input type="email" id="email" required />
+    <small class="error"></small>
+
+    <label>Phone Number :</label>
+    <input type="tel" id="phone" required />
+    <small class="error"></small>
+
+    <label>Age :</label>
+    <input type="number" id="age" required />
+    <small class="error"></small>
+
+    <label>Gender :</label>
+    <select id="gender" required>
+      <option value="">~~~Select Gender~~~</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+    <small class="error"></small>
+
+    <label>Event Type :</label>
+    <select id="eventType" required>
+      <option value="">~~~Select Event~~~</option>
+      <option value="Workshop">Workshop</option>
+      <option value="Seminar">Seminar</option>
+      <option value="Hackathon">Hackathon</option>
+    </select>
+    <small class="error"></small>
+
+    <label>Additional Notes</label>
+    <textarea id="notes" rows="3"></textarea>
+
+    <div class="button-group">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
